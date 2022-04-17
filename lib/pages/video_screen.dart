@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:for_kids/pages/video_screen_detail.dart';
 
 class VideoScreen extends StatefulWidget {
   const VideoScreen({Key? key}) : super(key: key);
@@ -9,50 +9,64 @@ class VideoScreen extends StatefulWidget {
 }
 
 class _VideoScreenState extends State<VideoScreen> {
-  List<String> videoIdItems = ['BH583njFR0k', '7ezHuBroilI', 'AD7eMN2phjc'];
+  Map<String, String> videoList = {
+    '00nLwjFdfOA': 'assets/video_images/буренка_даша.jpg',
+    'kZUTrLqDJVQ': 'assets/video_images/хоки_поки.jpg',
+    'K1q3Whf5lZ0': 'assets/video_images/про_ежика.jpg',
+    'CDV3JPiiG6Q': 'assets/video_images/малыш_ку_ку.jpg',
+    'py2RJyZozg4': 'assets/video_images/рыжая_кошка.jpg',
+    'JydIFn3BpF4': 'assets/video_images/про_часы.jpg',
+    'bzjtf3YCDfE': 'assets/video_images/часы_тик_так.jpg',
+    '7ezHuBroilI': 'assets/video_images/викторина.jpg',
+    'MIrzo07FHFg': 'assets/video_images/цыпленок_пи.jpg',
+    'wXU9KHKB47w': 'assets/video_images/арам_зам_зам.jpg',
+    'LbOve_UZZ54': 'assets/video_images/синий_трактор_по_полям.jpg',
+    'B_OujydiQAc': 'assets/video_images/ежик_пых_пых.jpg',
+    'BH583njFR0k': 'assets/video_images/мышонок.jpg',
+    'AD7eMN2phjc': 'assets/video_images/котик_полосатый.jpg',
+    'Wxoc78M9h9k': 'assets/video_images/розовый_котенок.jpg',
+  };
 
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-        itemCount: videoIdItems.length,
-        itemBuilder: (context, index) => Container(
+        itemCount: videoList.length,
+        itemBuilder: (context, index) {
+          String key = videoList.keys.elementAt(index).toString();
+          return GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => VideoScreenDetail(videoId: key)),
+              );
+            },
+            child: Container(
               padding: const EdgeInsets.all(8),
-              child: YoutubePlayer(
-                controller: YoutubePlayerController(
-                    initialVideoId: videoIdItems[index],
-                    flags: const YoutubePlayerFlags(autoPlay: false)),
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  Image.asset(videoList[key] ?? 'Ошибка загрузки изображения'),
+                  const Icon(Icons.play_circle, size: 60),
+                ],
               ),
-            ));
+            ),
+          );
+        });
   }
 }
 
- // late YoutubePlayerController controller;
-  // @override
-  // void initState() {
-  //   controller = YoutubePlayerController(
-  //       initialVideoId: videoIdItems.first,
-  //       flags: const YoutubePlayerFlags(autoPlay: false));
-  //   super.initState();
-  // }
 
-  // @override
-  // void deactivate() {
-  //   // Pauses video while navigating to next page.
-  //   controller.pause();
-  //   super.deactivate();
-  // }
 
-  // @override
-  // void dispose() {
-  //   controller.dispose();
-  //   super.dispose();
-  // }
-
- // return YoutubePlayerBuilder(
-    //   player: YoutubePlayer(controller: controller),
-    //   builder: (context, player) {
-    //     return Scaffold(body: Column(children: [
-    //       player,
-    //     ],),);
-    //   },
-    // );
+//  return ListView.builder(
+//         itemCount: videoIdItems.length,
+//         itemBuilder: (context, index) => Container(
+//               padding: const EdgeInsets.all(8),
+//               child: YoutubePlayer(
+//                 controller: YoutubePlayerController(
+//                     initialVideoId: videoIdItems[index],
+//                     flags: const YoutubePlayerFlags(autoPlay: false)),
+//               ),
+//             ));
+///////////////////////////////////////
+ 

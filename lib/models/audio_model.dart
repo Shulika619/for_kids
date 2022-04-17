@@ -10,17 +10,13 @@ class AudioFileModel {
 abstract class AudioFilesList {
   static List<AudioFileModel> audioItems = [
     AudioFileModel(
-        name: 'Розовый Котенок',
-        imgPath: 'assets/images/колыбельная_розовый_котенок.jpg',
-        audioPath: 'assets/audio/колыбельная_розовый_котенок.mp3'),
+        name: 'Брамс',
+        imgPath: 'assets/images/колыбельная_брамс.jpg',
+        audioPath: 'assets/audio/колыбельная_брамс.mp3'),
     AudioFileModel(
         name: 'Цветняшки',
         imgPath: 'assets/images/сборник_цветняшки.jpg',
         audioPath: 'assets/audio/сборник_цветняшки.mp3'),
-    AudioFileModel(
-        name: 'Брамс',
-        imgPath: 'assets/images/колыбельная_брамс.jpg',
-        audioPath: 'assets/audio/колыбельная_брамс.mp3'),
     AudioFileModel(
         name: 'Буренка Даша',
         imgPath: 'assets/images/колыбельная_буренка_даша.jpg',
@@ -37,5 +33,9 @@ abstract class AudioFilesList {
         name: 'Цып-Цып',
         imgPath: 'assets/images/колыбельная_цип_цип.jpg',
         audioPath: 'assets/audio/колыбельная_цип_цип.mp3'),
+    AudioFileModel(
+        name: 'Розовый Котенок',
+        imgPath: 'assets/images/колыбельная_розовый_котенок.jpg',
+        audioPath: 'assets/audio/колыбельная_розовый_котенок.mp3'),
   ];
 }

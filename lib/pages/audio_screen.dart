@@ -51,7 +51,7 @@ class _AudioScreenState extends State<AudioScreen> {
                   } catch (error) {
                     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                         backgroundColor: Colors.amber.withOpacity(0.5),
-                        content: Text('Упс, ошибка \n $error')));
+                        content: Text('Упс, ошибка загрузки файла \n $error')));
                     // log(error);
                   }
                 }
