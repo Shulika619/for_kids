@@ -18,7 +18,7 @@ class _VideoScreenDetailState extends State<VideoScreenDetail> {
     _controller = YoutubePlayerController(
         initialVideoId: widget.videoId ?? 'QTqUul-LMSU',
         flags: const YoutubePlayerFlags(
-          autoPlay: true, mute: false
+          autoPlay: true, mute: false, loop: true,
         ));
     super.initState();
   }
