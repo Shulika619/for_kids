@@ -14,9 +14,25 @@ abstract class AudioFilesList {
         imgPath: 'assets/images/колыбельная_брамс.jpg',
         audioPath: 'assets/audio/колыбельная_брамс.mp3'),
     AudioFileModel(
+        name: 'Спи моя радость',
+        imgPath: 'assets/images/спи_моя_радость_усни.jpg',
+        audioPath: 'assets/audio/спи_моя_радость_усни.mp3'),
+    AudioFileModel(
+        name: 'Усталые игрушки',
+        imgPath: 'assets/images/спят_усталые_игрушки.jpg',
+        audioPath: 'assets/audio/спят_усталые_игрушки.mp3'),
+    AudioFileModel(
         name: 'Цветняшки',
         imgPath: 'assets/images/сборник_цветняшки.jpg',
         audioPath: 'assets/audio/сборник_цветняшки.mp3'),
+    AudioFileModel(
+        name: 'Сверчок',
+        imgPath: 'assets/images/за_печкой_поет_сверчок.jpg',
+        audioPath: 'assets/audio/за_печкой_поет_сверчок.mp3'),
+    AudioFileModel(
+        name: 'Баю-баюшки',
+        imgPath: 'assets/images/баю_баюшки_баю.jpg',
+        audioPath: 'assets/audio/баю_баюшки_баю.mp3'),
     AudioFileModel(
         name: 'Буренка Даша',
         imgPath: 'assets/images/колыбельная_буренка_даша.jpg',
@@ -25,6 +41,10 @@ abstract class AudioFilesList {
         name: 'Медведица',
         imgPath: 'assets/images/колыбельная_медведицы.jpg',
         audioPath: 'assets/audio/колыбельная_медведицы.mp3'),
+    AudioFileModel(
+        name: 'Облака',
+        imgPath: 'assets/images/пушистые_большие_облака.jpg',
+        audioPath: 'assets/audio/пушистые_большие_облака.mp3'),
     AudioFileModel(
         name: 'Моцарт',
         imgPath: 'assets/images/колыбельная_моцарт.jpg',

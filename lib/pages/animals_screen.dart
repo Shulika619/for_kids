@@ -87,15 +87,15 @@ class _AnimalsScreenState extends State<AnimalsScreen> {
             header: Container(
               padding: const EdgeInsets.only(top: 10),
               child: playingIndex == index
-                  ? const Icon(
+                  ?  Icon(
                       Icons.volume_up,
-                      color: Colors.amber,
+                      color: Colors.amber[800],
                       size: 32,
                     )
                   : const Icon(
                       Icons.volume_down,
                       color: Colors.amber,
-                      size: 30,
+                      size: 31,
                     ),
             ),
 
