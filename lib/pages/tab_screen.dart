@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:for_kids/pages/audio_screen.dart';
-import 'package:for_kids/pages/game_screen.dart';
 import 'package:for_kids/pages/video_screen.dart';
+import 'package:for_kids/pages/audio_screen.dart';
+import 'package:for_kids/pages/animals_screen.dart';
 
-class MainScreen extends StatefulWidget {
-  const MainScreen({Key? key}) : super(key: key);
+class TabScreen extends StatefulWidget {
+  const TabScreen({Key? key}) : super(key: key);
 
   @override
-  State<MainScreen> createState() => _MainScreenState();
+  State<TabScreen> createState() => _TabScreenState();
 }
 
-class _MainScreenState extends State<MainScreen> {
+class _TabScreenState extends State<TabScreen> {
   int _selectedIndex = 1;
   late PageController _pageController;
 
   List<Widget> widgetOptions = <Widget>[
     const VideoScreen(),
     const AudioScreen(),
-    const GameScreen(),
+    const AnimalsScreen(),
   ];
 
   @override
@@ -70,7 +70,7 @@ class _MainScreenState extends State<MainScreen> {
               label: "Аудио",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.category_outlined),
+              icon: Icon(Icons.catching_pokemon),
               label: "Игра",
             ),
           ],

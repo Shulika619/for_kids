@@ -9,7 +9,8 @@ class VideoScreen extends StatefulWidget {
 }
 
 class _VideoScreenState extends State<VideoScreen> {
-  Map<String, String> videoList = {
+  
+  static const Map<String, String> videoList = {
     'qEJ9m_9As6A': 'assets/video_images/едит_машинка.jpg',
     'QlnFqmnVRtM': 'assets/video_images/деревяшки.jpg',
     '00nLwjFdfOA': 'assets/video_images/буренка_даша.jpg',
