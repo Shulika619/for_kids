@@ -1,6 +1,6 @@
 # for_kids
 
-A new Flutter project.
+Колыбельные, Мультфильмы и карты с животными
 
 ## Getting Started
 
