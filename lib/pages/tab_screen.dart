@@ -63,15 +63,15 @@ class _TabScreenState extends State<TabScreen> {
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.video_camera_back_outlined),
-              label: "Видео",
+              label: "Мультфильмы",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.queue_music_outlined),
-              label: "Аудио",
+              label: "Колыбельные",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.catching_pokemon),
-              label: "Игра",
+              label: "Животные",
             ),
           ],
         ));
