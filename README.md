@@ -1,16 +1,18 @@
 # for_kids
 
-Колыбельные, Мультфильмы и карты с животными
+Для детей (колыбельные, карточки животных, мультфильмы)
 
-## Getting Started
+![111](https://user-images.githubusercontent.com/99508083/174192213-deb0a6d1-2c1e-4178-8f1b-aa2a37820e18.png)
 
-This project is a starting point for a Flutter application.
+Полезное и простое приложение, которое будет отличным помощником для родителей и их маленьких детей. 
+Состоит из трех вкладок:
+- Колыбельные (классические и популярные колыбельные песни для быстрого погружения в сон).
+- Карточки животных (изучайте различных животных и звуки, которые они издают).
+- Мультфильмы (коллекция популярных мультиков, требует подключение интернета для просмотра!)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Ссылки
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [AppGallery](https://appgallery.huawei.com/app/C106027005)
+
+
